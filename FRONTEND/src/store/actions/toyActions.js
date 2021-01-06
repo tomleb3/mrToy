@@ -1,5 +1,4 @@
 import { toyService } from "../../services/toyService"
-import { utilService } from "../../services/utilService"
 
 export function loadToys() {
     return (dispatch) => {
@@ -40,22 +39,15 @@ export function updateToy(toy) {
     }
 }
 
-// export function addToy(title, desc) {
-//     return (dispatch) => {
-//         const action = {
-//             type: 'ADD',
-//             toy: {
-//                 _id: utilService.makeId(),
-//                 title,
-//                 desc,
-//                 createdAt: Date.now(),
-//                 createdBy: 'USER',
-//                 isDone: false
-//             }
-//         }
-//         dispatch(action)
-//     }
-// }
+export function setFilter(filterBy) {
+    return (dispatch) => {
+        const action = {
+            type: 'FILTER_TODOS',
+            filterBy
+        }
+        dispatch(action)
+    }
+}
 
 export function removeToy(toyId) {
     return (dispatch) => {

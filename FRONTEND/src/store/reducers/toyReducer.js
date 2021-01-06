@@ -1,10 +1,6 @@
-import { toyService } from '../../services/toyService.js'
-
-// const toys = toyService.query().then(_toys => { return _toys })
-// console.log(toys)
-
 const initialState = {
     toys: [],
+    filterBy: { type: 'all', name: '' }
 }
 
 export function toyReducer(state = initialState, action) {
@@ -21,6 +17,8 @@ export function toyReducer(state = initialState, action) {
                 ...state,
                 toys: [...state.toys, action.toy]
             }
+        case 'FILTER_TODOS':
+            return { ...state, filterBy: action.filterBy }
         case 'REMOVE_TOY':
             return { ...state, toys: state.toys.filter(toy => toy._id !== action.toyId) }
         default:

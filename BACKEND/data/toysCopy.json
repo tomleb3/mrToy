@@ -1,0 +1,164 @@
+{
+  "toys": [
+    {
+      "_id": "Y991c",
+      "name": "nullam tincidunt",
+      "price": 83,
+      "type": "Funny",
+      "createdAt": "1978-10-19T18:35:51.588Z",
+      "inStock": true
+    },
+    {
+      "_id": "0EqY5",
+      "name": "sed amet",
+      "price": 60,
+      "type": "Adult",
+      "createdAt": "1998-05-20T04:08:54.422Z",
+      "inStock": true
+    },
+    {
+      "_id": "TVFrF",
+      "name": "vestibulum augue",
+      "price": 43,
+      "type": "Adult",
+      "createdAt": "1986-02-15T14:53:21.224Z",
+      "inStock": false
+    },
+    {
+      "_id": "XyBNg",
+      "name": "ante odio",
+      "price": 60,
+      "type": "Educational",
+      "createdAt": "1985-09-07T18:43:25.842Z",
+      "inStock": true
+    },
+    {
+      "_id": "EMDhv",
+      "name": "lacus tincidunt",
+      "price": 97,
+      "type": "Educational",
+      "createdAt": "1998-04-19T19:56:07.970Z",
+      "inStock": false
+    },
+    {
+      "_id": "HoFjQ",
+      "name": "nunc porttitor",
+      "price": 53,
+      "type": "Educational",
+      "createdAt": "1996-09-17T22:13:23.549Z",
+      "inStock": false
+    },
+    {
+      "_id": "UGXvy",
+      "name": "facilisis massa",
+      "price": 76,
+      "type": "Adult",
+      "createdAt": "1985-08-26T07:27:49.589Z",
+      "inStock": true
+    },
+    {
+      "_id": "ouaVm",
+      "name": "at neque",
+      "price": 42,
+      "type": "Adult",
+      "createdAt": "1979-03-11T23:46:32.683Z",
+      "inStock": true
+    },
+    {
+      "_id": "T3PmJ",
+      "name": "consequat egestas",
+      "price": 87,
+      "type": "Educational",
+      "createdAt": "1976-08-03T17:05:07.267Z",
+      "inStock": false
+    },
+    {
+      "_id": "VlUhf",
+      "name": "ac sit",
+      "price": 70,
+      "type": "Adult",
+      "createdAt": "1978-06-18T14:31:28.427Z",
+      "inStock": false
+    },
+    {
+      "_id": "Rdh07",
+      "name": "odio tempor",
+      "price": 23,
+      "type": "Funny",
+      "createdAt": "1983-03-02T18:47:36.044Z",
+      "inStock": true
+    },
+    {
+      "_id": "mp1Y1",
+      "name": "facilisis tortor",
+      "price": 94,
+      "type": "Adult",
+      "createdAt": "1984-06-10T13:30:06.461Z",
+      "inStock": false
+    },
+    {
+      "_id": "XCewX",
+      "name": "vestibulum amet",
+      "price": 6,
+      "type": "Funny",
+      "createdAt": "1995-01-21T15:10:58.392Z",
+      "inStock": false
+    },
+    {
+      "_id": "5m3Jv",
+      "name": "sed consectetur",
+      "price": 26,
+      "type": "Educational",
+      "createdAt": "1973-09-03T02:27:22.385Z",
+      "inStock": true
+    },
+    {
+      "_id": "Wp4Bj",
+      "name": "amet tempor",
+      "price": 90,
+      "type": "Funny",
+      "createdAt": "1976-09-15T18:05:01.042Z",
+      "inStock": false
+    },
+    {
+      "_id": "9sxo5",
+      "name": "sollicitudin morbi",
+      "price": 34,
+      "type": "Funny",
+      "createdAt": "1980-05-07T19:59:13.790Z",
+      "inStock": true
+    },
+    {
+      "_id": "IxqwZ",
+      "name": "molestie at",
+      "price": 36,
+      "type": "Educational",
+      "createdAt": "1971-04-27T20:22:54.757Z",
+      "inStock": true
+    },
+    {
+      "_id": "zNjsB",
+      "name": "pharetra placerat",
+      "price": 83,
+      "type": "Educational",
+      "createdAt": "1994-02-27T11:35:22.333Z",
+      "inStock": true
+    },
+    {
+      "_id": "ejZIU",
+      "name": "pulvinar vitae",
+      "price": 32,
+      "type": "Educational",
+      "createdAt": "1997-04-02T05:30:16.207Z",
+      "inStock": false
+    },
+    {
+      "_id": "HN5ff",
+      "name": "nullam sit",
+      "price": 11,
+      "type": "Adult",
+      "createdAt": "1990-02-28T23:51:11.487Z",
+      "inStock": false
+    }
+  ]
+}

@@ -8,7 +8,8 @@ class _ToyUpdate extends Component {
         toy: {
             name: '',
             price: 0,
-            inStock: true
+            inStock: true,
+            type: 'Educational'
         }
     }
 
@@ -16,7 +17,7 @@ class _ToyUpdate extends Component {
         const { toyId } = this.props.match.params
         if (toyId) {
             const toy = this.props.toys.find(toy => {
-                return toy._id === +toyId
+                return toy._id === toyId
             })
             this.setState({ toy })
         }
@@ -24,7 +25,10 @@ class _ToyUpdate extends Component {
 
     handleInput = ({ target }) => {
         const field = target.name
-        const value = (field === 'inStock') ? target.checked : target.value
+        let value
+        value = (field === 'inStock') ? target.checked : target.value
+        value = (field === 'price') ? +value : value
+
         this.setState(prevState => {
             return {
                 toy: {
@@ -38,7 +42,7 @@ class _ToyUpdate extends Component {
     onSaveToy = (ev) => {
         ev.preventDefault()
         const { toy } = this.state
-        // if (!toy.name) return // TODO be nicer to the user.....
+        // if (!toy.name) return
         if (toy._id) {
             this.props.updateToy(toy).then(() => this.props.history.push('/toy'))
         } else {
@@ -58,6 +62,11 @@ class _ToyUpdate extends Component {
                     <input autoFocus type="text" value={toy.name} onChange={this.handleInput} name="name" />
                     <label>Price</label>
                     <input type="number" value={toy.price} onChange={this.handleInput} name="price" />
+                    <select onChange={this.handleInput} name="type" value={this.state.toy.type}>
+                        <option value="educational">Educational</option>
+                        <option value="funny">Funny</option>
+                        <option value="adult">Adult</option>
+                    </select>
                     <label>in Stock</label>
                     <input type="checkbox" checked={toy.inStock} onChange={this.handleInput} name="inStock" />
                     <button>Save</button>

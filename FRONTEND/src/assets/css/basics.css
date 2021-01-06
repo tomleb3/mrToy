@@ -24,3 +24,11 @@ a, link {
     color: inherit;
     text-decoration: none;
 }
+
+input, select {
+    caret-color: red;
+    border: 2px solid #bbbbbb;
+    border-radius: 2px;
+    padding: 0.3rem;
+    padding-right: 1rem;
+}

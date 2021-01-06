@@ -1,8 +1,6 @@
-import { utilService } from './utilService.js';
 import axios from 'axios'
 
-var gToys
-const URL = `http://localhost:3000/toys`
+const URL = `http://localhost:3030/api/toys`
 
 export const toyService = {
     query,
@@ -11,8 +9,8 @@ export const toyService = {
     removeToy
 }
 
-function query() {
-    return axios.get(URL).then(res => { return res.data })
+function query(filterBy  = {}) {
+    return axios.get(URL, {params: filterBy}).then(res => { return res.data })
 }
 
 function getToyById(toyId) {
