@@ -2,6 +2,7 @@ import './App.css';
 import { routes } from './routes.js'
 import { AppHeader } from './cmps/AppHeader.jsx'
 import { Switch, Route } from 'react-router-dom'
+import './styles/styles.scss'
 
 function App() {
   return (
